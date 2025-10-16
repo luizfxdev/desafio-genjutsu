@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio do Genjutsu: Encontre o Pangrama!</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Roboto:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Vídeo de fundo -->
+    <video class="background-video" autoplay muted loop playsinline>
+      <source src="assets/background.mp4" type="video/mp4" />
+      Seu navegador não suporta vídeo HTML5.
+    </video>
+
+    <!-- Controles de Áudio -->
+    <div class="audio-controls">
+      <button id="play-audio" class="audio-btn" title="Tocar música">🎵</button>
+      <button id="pause-audio" class="audio-btn" title="Pausar música">⏸️</button>
+    </div>
+
+    <!-- Áudio de fundo -->
+    <audio id="theme-audio" loop>
+      <source src="assets/theme.mp3" type="audio/mpeg" />
+      Seu navegador não suporta áudio HTML5.
+    </audio>
+
+    <!-- Container Principal -->
+    <div class="main-container">
+      <div class="challenge-header">
+        <h1>Desafio do Genjutsu</h1>
+        <h2>Encontre o Pangrama de Itachi Uchiha</h2>
+        <p class="challenge-description">
+          Você está preso no Tsukuyomi de Itachi. Para escapar, você precisa identificar se a frase inserida é um
+          pangrama, um pangrama perfeito, ou nenhum dos dois.
+        </p>
+      </div>
+
+      <!-- Input de Entrada -->
+      <div class="input-section">
+        <label for="input-phrase">Digite uma frase ou palavra:</label>
+        <input
+          type="text"
+          id="input-phrase"
+          placeholder="Ex: Jovem craque belga prediz falhas no xote com whisky."
+          autocomplete="off"
+        />
+      </div>
+
+      <!-- Botões -->
+      <div class="buttons-section">
+        <div class="button-container-2">
+          <span class="mas">DECIFRAR</span>
+          <button type="button" id="btn-decifrar" name="Decifrar">DECIFRAR</button>
+        </div>
+
+        <div class="button-container-2">
+          <span class="mas">RETORNAR</span>
+          <button type="button" id="btn-retornar" name="Retornar">RETORNAR</button>
+        </div>
+      </div>
+
+      <!-- Seção de Resultado -->
+      <div class="result-section" id="result-section">
+        <h3>Resultado</h3>
+        <div class="result-content" id="result-content">
+          <!-- O resultado será inserido aqui via JavaScript -->
+        </div>
+      </div>
+
+      <!-- Estatísticas do Banco de Dados -->
+      <div class="stats-section" id="stats-section">
+        <h4>📊 Estatísticas do Banco de Dados</h4>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <span class="stat-label">Pangramas Perfeitos:</span>
+            <span class="stat-value" id="stat-perfect">-</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">Pangramas:</span>
+            <span class="stat-value" id="stat-pangrams">-</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">Não-Pangramas:</span>
+            <span class="stat-value" id="stat-non-pangrams">-</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">Total de Frases:</span>
+            <span class="stat-value" id="stat-total">-</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
