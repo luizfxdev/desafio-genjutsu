@@ -539,6 +539,6 @@ SOFTWARE.
 
 [![Naruto](https://img.shields.io/badge/Believe%20It!-Dattebayo-orange?style=for-the-badge)](https://naruto.fandom.com/wiki/Itachi_Uchiha)
 
-*"Aqueles que fogem de suas responsabilidades são piores que lixo."* — **Obito Uchiha**
+*"O crescimento ocorre quando se ultrapassa seus limites. Perceber isso também faz parte do treinamento."* — **Itachi Uchiha**
 
 </div>
